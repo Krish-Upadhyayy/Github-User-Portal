@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Explorer</title>
+    <link rel="stylesheet" href="./css/style.css">
+   
+</head>
+
+<body>
+</div>
+    <main class="container">
+
+        <!-- App Heading -->
+        <header>
+            <h1>GitHub User Explorer</h1>
+            <p>Search and explore GitHub developer profiles.</p>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <input
+                type="text"
+                id="usernameInput"
+                placeholder="Enter GitHub username..."
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </section>
+
+        <!-- Loading State -->
+        <section class="loading-section">
+
+            <div id="loadingMessage"></div>
+
+        </section>
+
+        <!-- Error State -->
+        <section class="error-section">
+
+            <div id="errorMessage"></div>
+
+        </section>
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+
+            <h2>Developer Profile</h2>
+
+            <div id="profileContainer">
+
+                <!-- JavaScript will inject profile data here -->
+
+            </div>
+
+        </section>
+
+        <!-- Language Breakdown -->
+        <section class="language-section">
+
+            <h2>Language Breakdown</h2>
+
+            <div id="languageContainer">
+
+                <!-- JavaScript will inject language data here -->
+
+            </div>
+
+        </section>
+
+        <!-- Sort Controls -->
+        <section class="sort-section">
+
+            <label for="sortRepos">
+                Sort Repositories:
+            </label>
+
+            <select id="sortRepos">
+
+                <option value="stars">
+                    Stars
+                </option>
+
+                <option value="updated">
+                    Recently Updated
+                </option>
+
+                <option value="name">
+                    Name
+                </option>
+
+            </select>
+
+        </section>
+
+        <!-- Repository Section -->
+        <section class="repo-section">
+
+            <h2>Repositories</h2>
+
+            <div id="repoContainer">
+
+                <!-- JavaScript will inject repositories here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+<script src="./js/app.js"></script>
+</body>
+</html>

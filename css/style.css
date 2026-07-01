@@ -1,0 +1,166 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --accent: #58a6ff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding-top: 10px;
+    margin: 40px auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #666;
+    font-size: 1rem;
+}
+.search-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#usernameInput {
+    flex: 1;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+#usernameInput:focus {
+    outline: none;
+    border-color: #24292e;
+}
+#searchBtn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#searchBtn:hover {
+    opacity: 0.8;
+}
+.profile-section {
+    margin-bottom: 30px;
+}
+#profileContainer {
+    background: var(--surface);
+    color: greenyellow;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 150px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+section h2 {
+    margin-bottom: 15px;
+}
+.language-section,
+.sort-section,
+.repo-section {
+    margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+    .search-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #usernameInput {
+        max-width: 100%;
+    }
+}
+#languageContainer {
+    background: var(--surface);
+    color: greenyellow;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 100px;
+    box-shadow: 0 2px 10px rgba(0, 255, 0, 0.8);
+}
+#sortRepos {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.repo-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+#repoContainer {
+    display: grid;
+    gap: 20px;
+    background: var(--surface);
+    color: black;
+}
+#loadingMessage,
+#errorMessage {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#errorMessage {
+    color: crimson;
+}
+
+#loadingMessage {
+    color: #24292e;
+}
+.repo-card {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: 0.2s ease;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.repo-card a {
+    color: #24292e;
+    font-weight: bold;
+    text-decoration: none;
+}
