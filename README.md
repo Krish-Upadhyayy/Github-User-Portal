@@ -109,3 +109,5 @@ This project helped in understanding:
 
 ## 👨‍💻 Author
 GitHub: https://github.com/Krish-Upadhyayy
+Netlify: https://krish-github-user-explorer.netlify.app/
+
